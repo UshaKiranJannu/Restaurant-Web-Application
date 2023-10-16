@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<title>Restaruant</title>
+<meta name="HomePage" content="RestaruantHomePage">
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="page1Container">
+    <h1 id="page1h1">Popular restaruants</h1>
+<div class="items1">
+    <div class="hotelimg">
+        <div><img id = "hotelimgred" class = "hotel1" src="rest.png" alt="Italian Trulli" width = "120" height = "120" onclick="redirect1()"></div>
+            <div><p class = "textoverimage">Riviera Caterer</p></div>
+        </div>
+    <div class="hotelimg">
+        <div><img id = "hotelimgred" class = "hotel2" src="rest.png" alt="Italian Trulli" width = "120" height = "120" onclick="redirect2()"></div>
+            <div><p class = "textoverimage">Wilken'S Fine Food</p></div>
+        </div>
+    <div class="hotelimg">
+        <div><img id = "hotelimgred" class = "hotel3" src="rest.png" alt="Italian Trulli" width = "120" height = "120" onclick="redirect3()"></div>
+            <div><p class = "textoverimage">Brunos On The Boulevard</p></div>
+        </div>
+    <div class="hotelimg">
+        <div><img id = "hotelimgred" class = "hotel4" src="rest.png" alt="Italian Trulli" width = "120" height = "120" onclick="redirect4()"></div>
+            <div><p class = "textoverimage">Taste The Tropics Ice Cream</p></div>
+        </div>
+    <div class="hotelimg">
+        <div><img id = "hotelimgred" class = "hotel5" src="rest.png" alt="Italian Trulli" width = "120" height = "120" onclick="redirect5()"></div>
+            <div><p class = "textoverimage">Seuda Foods</p></div>
+        </div>
+
+</div>
+<h1 id="page1h1">Keyword search</h1>
+<div class="items2">
+    <form action="/form/submit" method="GET"> 
+        <input type="text" name="text" class="search" placeholder="Search Restaruant!">
+        </form>
+    <button id="hotelsearchbtn" onclick="searchresults()">Search</button>
+    <script src="script.js"></script>
+    <script src="DbConnect.js"></script>
+</div>
+</div>
+</body>
+</html>
